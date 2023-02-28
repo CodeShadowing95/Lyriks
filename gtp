@@ -1,3 +1,3 @@
 git add .
-git commit -m "TopPlay section edited"
+git commit -m "SongDetails, DetailsHeader, RelatedSongs modules edited"
 git push
