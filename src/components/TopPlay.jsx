@@ -1,12 +1,12 @@
-import { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode } from "swiper";
+import { FreeMode } from 'swiper';
 
-import PlayPause from "./PlayPause";
+import PlayPause from './PlayPause';
 import { playPause, setActiveSong } from '../redux/features/playerSlice';
-import { useGetTopChartsQuery } from "../redux/services/shazam-core";
+import { useGetTopChartsQuery } from '../redux/services/shazam-core';
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -106,7 +106,7 @@ const TopPlay = () => {
           modules={[FreeMode]}
           className="mt-4"
         >
-          {topPlays?.map((song, i) => (
+          {topPlays?.map((song) => (
             <SwiperSlide
               key={song?.key}
               style={{ width: '25%', height: 'auto' }}
